@@ -2,7 +2,7 @@
   <Header></Header>
   <article class="flex justify-center min-h-[calc(100vh-40px)] items-center">
     <section v-for="userInfo in randomUserData" :key="userInfo.login.sha256" class="text-center w-[500px]">
-      <Avatar :url="userInfo.picture.large" class="flex justify-center" @click="getRandomUserData"></Avatar>
+      <Avatar :url="userInfo.picture.large" class="flex justify-center"></Avatar>
       <span class="text-xl">
         {{ title }}
       </span>
